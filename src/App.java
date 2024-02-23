@@ -1,8 +1,8 @@
-import controllers.showfiles.ShowFiles;
+import controllers.showfiles.FileTxtController;
 
 public class App {
     public static void main(String[] args) {
-        ShowFiles showFiles= new ShowFiles(".\\ExampleBase64.txt");
-        showFiles.showDecoder64();
+        FileTxtController fileTxtController=new FileTxtController();
+        fileTxtController.testFileTxt();
     }
 }
