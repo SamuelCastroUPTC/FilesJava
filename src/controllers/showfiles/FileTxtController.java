@@ -9,11 +9,11 @@ public class FileTxtController {
     public void testFileTxt(){
         ProcessesFiles processesFile= new ProcessesFiles();
         processesFile.setNameFile(".\\Example.txt");
-        List<String> list;
+        byte[] bytes;
         try {
-            list=processesFile.extraerString();
+            bytes=processesFile.extraerStringByte();
             ConsolaController consolaController= new ConsolaController();
-            consolaController.showInfo(list);
+            consolaController.showInfo(bytes);
         } catch (Exception e) {
             // TODO: handle exception
         }

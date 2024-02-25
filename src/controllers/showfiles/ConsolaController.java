@@ -10,4 +10,10 @@ public class ConsolaController {
             System.out.println(string);
         }
     }
+
+    public void showInfo(byte[] bytes){
+        for (byte b : bytes) {
+            System.out.println(b);
+        }
+    }
 }
